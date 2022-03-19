@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProjectImpl>
+	<name>SenderAndReceiver</name>
+	<Attributes type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.AttributesImpl">
+		<AttributesImpl>
+			<name>Variables</name>
+			<ChildNamePrefix>g_variable</ChildNamePrefix>
+		</AttributesImpl>
+	</Attributes>
+	<DataBases type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.DataBasesImpl">
+		<DataBasesImpl>
+			<name>Databases</name>
+			<ChildNamePrefix>dataBase</ChildNamePrefix>
+		</DataBasesImpl>
+	</DataBases>
+	<DirectoryFileName>SenderAndReceiver</DirectoryFileName>
+	<Ecus type="PrimaTestCaseLibrary.RestBusSimulation.EcusImpl">
+		<EcusImpl>
+			<name>Nodes</name>
+			<ChildNamePrefix>node</ChildNamePrefix>
+		</EcusImpl>
+	</Ecus>
+	<Functions type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.FunctionsImpl">
+		<FunctionsImpl>
+			<name>Modules</name>
+			<ChildNamePrefix>g_module</ChildNamePrefix>
+			<GroupeNamePrefix>g_group</GroupeNamePrefix>
+		</FunctionsImpl>
+	</Functions>
+	<Messages type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessagesImpl">
+		<MessagesImpl>
+			<name>Messages</name>
+			<ChildNamePrefix>msg</ChildNamePrefix>
+			<Messages>
+				<Message type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessageIpImpl">
+					<MessageIpImpl>
+						<name>g_ipv4_msg</name>
+						<auto_save>false</auto_save>
+						<Packet type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.IPPacketImpl">
+							<IPPacketImpl>
+								<ip_address_destination>169.254.68.44</ip_address_destination>
+								<ip_address_source_prop>Auto</ip_address_source_prop>
+								<ParentPacket type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.EthernetFrameImpl">
+									<EthernetFrameImpl>
+										<mac_address_destination>FF:FF:FF:FF:FF:FF</mac_address_destination>
+										<mac_address_source_prop>02:00:4C:4F:4F:50</mac_address_source_prop>
+										<vlan_tag type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.VlanImpl">
+											<VlanImpl>
+												<inner_priority_tag>0</inner_priority_tag>
+											</VlanImpl>
+										</vlan_tag>
+									</EthernetFrameImpl>
+								</ParentPacket>
+							</IPPacketImpl>
+						</Packet>
+						<ReceiverAdapter_id>Simulation</ReceiverAdapter_id>
+						<reset_flag>true</reset_flag>
+						<SenderAdapter_id>Simulation</SenderAdapter_id>
+					</MessageIpImpl>
+				</Message>
+			</Messages>
+		</MessagesImpl>
+	</Messages>
+	<Panels type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.PanelsImpl">
+		<PanelsImpl>
+			<name>Panels</name>
+			<ChildNamePrefix>panel</ChildNamePrefix>
+		</PanelsImpl>
+	</Panels>
+	<ScriptNodes type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodesImpl">
+		<NodesImpl>
+			<name>Scripts</name>
+			<ChildNamePrefix>script</ChildNamePrefix>
+			<Nodes>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>send</name>
+						<DocumentId>7ea292bc-ef0a-4ea0-b95a-cca67d073a70</DocumentId>
+						<FileUrl>send.py</FileUrl>
+						<isActive>true</isActive>
+					</NodeImpl>
+				</Script>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>receive</name>
+						<DocumentId>442cee5c-9c5b-4f30-af1c-62ccafdd6284</DocumentId>
+						<FileUrl>receive.py</FileUrl>
+						<isActive>true</isActive>
+					</NodeImpl>
+				</Script>
+			</Nodes>
+			<TestSuitePrefix>scripts_group</TestSuitePrefix>
+		</NodesImpl>
+	</ScriptNodes>
+	<spec_reference>Bmw</spec_reference>
+	<Timers type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.TimersImpl">
+		<TimersImpl>
+			<name>Timers</name>
+			<ChildNamePrefix>g_timer</ChildNamePrefix>
+		</TimersImpl>
+	</Timers>
+	<version>0.15.0</version>
+</TestProjectImpl>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProjectImpl>
+	<name>SomeIP</name>
+	<Attributes type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.AttributesImpl">
+		<AttributesImpl>
+			<name>Variables</name>
+			<ChildNamePrefix>g_variable</ChildNamePrefix>
+		</AttributesImpl>
+	</Attributes>
+	<DataBases type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.DataBasesImpl">
+		<DataBasesImpl>
+			<name>Databases</name>
+			<ChildNamePrefix>dataBase</ChildNamePrefix>
+		</DataBasesImpl>
+	</DataBases>
+	<DirectoryFileName>SomeIP</DirectoryFileName>
+	<Ecus type="PrimaTestCaseLibrary.RestBusSimulation.EcusImpl">
+		<EcusImpl>
+			<name>Nodes</name>
+			<ChildNamePrefix>node</ChildNamePrefix>
+		</EcusImpl>
+	</Ecus>
+	<Functions type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.FunctionsImpl">
+		<FunctionsImpl>
+			<name>Modules</name>
+			<ChildNamePrefix>g_module</ChildNamePrefix>
+			<GroupeNamePrefix>g_group</GroupeNamePrefix>
+		</FunctionsImpl>
+	</Functions>
+	<Messages type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessagesImpl">
+		<MessagesImpl>
+			<name>Messages</name>
+			<ChildNamePrefix>msg</ChildNamePrefix>
+			<Messages>
+				<Message type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessageSomeIPImpl">
+					<MessageSomeIPImpl>
+						<name>someip_msg</name>
+						<auto_save>false</auto_save>
+						<Packet type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.UDPPacketImpl">
+							<UDPPacketImpl>
+								<ParentPacket type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.IPPacketImpl">
+									<IPPacketImpl>
+										<ip_address_destination>255.255.255.255</ip_address_destination>
+										<ip_address_source_prop>Auto</ip_address_source_prop>
+										<ParentPacket type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.EthernetFrameImpl">
+											<EthernetFrameImpl>
+												<mac_address_destination>FF:FF:FF:FF:FF:FF</mac_address_destination>
+												<mac_address_source_prop>00:13:3B:B0:0F:80</mac_address_source_prop>
+												<vlan_tag type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.VlanImpl">
+													<VlanImpl>
+														<inner_priority_tag>0</inner_priority_tag>
+													</VlanImpl>
+												</vlan_tag>
+											</EthernetFrameImpl>
+										</ParentPacket>
+									</IPPacketImpl>
+								</ParentPacket>
+								<port_destination>30491</port_destination>
+								<port_source>30501</port_source>
+							</UDPPacketImpl>
+						</Packet>
+						<ParentPacket type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.UDPPacketImpl">
+							<UDPPacketImpl>
+								<ParentPacket type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.IPPacketImpl">
+									<IPPacketImpl>
+										<ip_address_destination>255.255.255.255</ip_address_destination>
+										<ip_address_source_prop>Auto</ip_address_source_prop>
+										<ParentPacket type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.EthernetFrameImpl">
+											<EthernetFrameImpl>
+												<mac_address_destination>FF:FF:FF:FF:FF:FF</mac_address_destination>
+												<mac_address_source_prop>00:13:3B:B0:0F:80</mac_address_source_prop>
+												<vlan_tag type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.VlanImpl">
+													<VlanImpl>
+														<inner_priority_tag>0</inner_priority_tag>
+													</VlanImpl>
+												</vlan_tag>
+											</EthernetFrameImpl>
+										</ParentPacket>
+									</IPPacketImpl>
+								</ParentPacket>
+								<port_destination>30491</port_destination>
+								<port_source>30501</port_source>
+							</UDPPacketImpl>
+						</ParentPacket>
+						<ReceiverAdapter_id>Receiver</ReceiverAdapter_id>
+						<reset_flag>true</reset_flag>
+						<SenderAdapter_id>Receiver</SenderAdapter_id>
+						<someip_header type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.SomeIPHeaderImpl">
+							<SomeIPHeaderImpl>
+								<method_id>0x0000</method_id>
+								<service_id>0x0000</service_id>
+							</SomeIPHeaderImpl>
+						</someip_header>
+					</MessageSomeIPImpl>
+				</Message>
+			</Messages>
+		</MessagesImpl>
+	</Messages>
+	<Panels type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.PanelsImpl">
+		<PanelsImpl>
+			<name>Panels</name>
+			<ChildNamePrefix>panel</ChildNamePrefix>
+		</PanelsImpl>
+	</Panels>
+	<ScriptNodes type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodesImpl">
+		<NodesImpl>
+			<name>Scripts</name>
+			<ChildNamePrefix>script</ChildNamePrefix>
+			<Nodes>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>test_vsomeip</name>
+						<DocumentId>41ab53c2-0f6a-47f9-b51c-9b894b11f2f6</DocumentId>
+						<FileUrl>test_vsomeip.py</FileUrl>
+						<isActive>true</isActive>
+					</NodeImpl>
+				</Script>
+			</Nodes>
+			<TestSuitePrefix>scripts_group</TestSuitePrefix>
+		</NodesImpl>
+	</ScriptNodes>
+	<spec_reference>Bmw</spec_reference>
+	<Timers type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.TimersImpl">
+		<TimersImpl>
+			<name>Timers</name>
+			<ChildNamePrefix>g_timer</ChildNamePrefix>
+		</TimersImpl>
+	</Timers>
+	<version>0.15.0</version>
+</TestProjectImpl>

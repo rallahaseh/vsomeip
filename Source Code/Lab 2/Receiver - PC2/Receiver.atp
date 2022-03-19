@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestProjectImpl>
+	<name>Receiver</name>
+	<Attributes type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.AttributesImpl">
+		<AttributesImpl>
+			<name>Variables</name>
+			<ChildNamePrefix>g_variable</ChildNamePrefix>
+		</AttributesImpl>
+	</Attributes>
+	<DataBases type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.DataBasesImpl">
+		<DataBasesImpl>
+			<name>Databases</name>
+			<ChildNamePrefix>dataBase</ChildNamePrefix>
+		</DataBasesImpl>
+	</DataBases>
+	<DirectoryFileName>Receiver</DirectoryFileName>
+	<Ecus type="PrimaTestCaseLibrary.RestBusSimulation.EcusImpl">
+		<EcusImpl>
+			<name>Nodes</name>
+			<ChildNamePrefix>node</ChildNamePrefix>
+		</EcusImpl>
+	</Ecus>
+	<Functions type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.FunctionsImpl">
+		<FunctionsImpl>
+			<name>Modules</name>
+			<ChildNamePrefix>g_module</ChildNamePrefix>
+			<GroupeNamePrefix>g_group</GroupeNamePrefix>
+		</FunctionsImpl>
+	</Functions>
+	<Messages type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessagesImpl">
+		<MessagesImpl>
+			<name>Messages</name>
+			<ChildNamePrefix>msg</ChildNamePrefix>
+			<Messages>
+				<Message type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.MessageEtherImpl">
+					<MessageEtherImpl>
+						<name>g_ethernet_msg</name>
+						<auto_save>false</auto_save>
+						<ethertype>0</ethertype>
+						<mac_address_destination>00-13-3B-B0-11-09</mac_address_destination>
+						<mac_address_source>00:13:3B:B0:11:0A</mac_address_source>
+						<ReceiverAdapter_id>Simulation</ReceiverAdapter_id>
+						<reset_flag>false</reset_flag>
+						<SenderAdapter_id>Simulation</SenderAdapter_id>
+						<vlan_tag type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.VlanImpl">
+							<VlanImpl>
+								<inner_priority_tag>0</inner_priority_tag>
+							</VlanImpl>
+						</vlan_tag>
+					</MessageEtherImpl>
+				</Message>
+			</Messages>
+		</MessagesImpl>
+	</Messages>
+	<Panels type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.PanelsImpl">
+		<PanelsImpl>
+			<name>Panels</name>
+			<ChildNamePrefix>panel</ChildNamePrefix>
+		</PanelsImpl>
+	</Panels>
+	<ScriptNodes type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodesImpl">
+		<NodesImpl>
+			<name>Scripts</name>
+			<ChildNamePrefix>script</ChildNamePrefix>
+			<Nodes>
+				<Script type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.NodeImpl">
+					<NodeImpl>
+						<name>receive</name>
+						<DocumentId>418a48d7-038b-4968-929f-610716228f4e</DocumentId>
+						<FileUrl>receive.py</FileUrl>
+						<isActive>true</isActive>
+					</NodeImpl>
+				</Script>
+			</Nodes>
+			<TestSuitePrefix>scripts_group</TestSuitePrefix>
+		</NodesImpl>
+	</ScriptNodes>
+	<spec_reference>Bmw</spec_reference>
+	<Timers type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.TimersImpl">
+		<TimersImpl>
+			<name>Timers</name>
+			<ChildNamePrefix>g_timer</ChildNamePrefix>
+			<Timers>
+				<Timer type="PrimaTestCaseLibrary.BusinessTestCaseLibrary.TimerImpl">
+					<TimerImpl>
+						<name>g_timer</name>
+						<interval>1000</interval>
+						<time>0</time>
+						<time_out>0</time_out>
+					</TimerImpl>
+				</Timer>
+			</Timers>
+		</TimersImpl>
+	</Timers>
+	<version>0.15.0</version>
+</TestProjectImpl>
