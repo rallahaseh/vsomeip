@@ -1,7 +1,18 @@
-# Embedded Connectivity - Final Lab (Project)
-# vsomeip
+# Ausgewählte Themen der Embedded Software Entwicklung I - Selected Topics of Embedded Software Development I
+## Embedded Connectivity
 
-> Rashed Al-Lahaseh (00821573), Clavijo Epia German (00808082)
+**Semester:** SS-2021
+
+**Instructor:** Prof. Dr. Andreas Grzemba
+
+**Project:** VSomeIP
+
+
+<img src="https://technica-engineering.de/wp-content/uploads/2018/06/mediagateway-b-1200x1200.jpg" alt="drawing" width="500"/>
+
+## Group
+- Rashed Al-Lahaseh (00821573)
+- Clavijo Epia German (00808082)
 
 ## Overview
 A communication between 2 computers, connected by the media gateway, is to take place using the [someip](https://github.com/GENIVI/vsomeip) protocol.
