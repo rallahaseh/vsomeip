@@ -8,7 +8,9 @@
 **Project:** VSomeIP
 
 
-<img src="https://technica-engineering.de/wp-content/uploads/2018/06/mediagateway-b-1200x1200.jpg" alt="drawing" width="500"/>
+<img src="https://github.com/rallahaseh/vsomeip/assets/10099935/c7ab34e0-8932-4e75-86b2-9dd2677e305f" alt="drawing" width="500"/>
+
+
 
 ## Group
 - Rashed Al-Lahaseh (00821573)
